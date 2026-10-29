@@ -1,0 +1,1 @@
+<%@ page import="org.gerdoc.model.UsuarioSesion" %><% UsuarioSesion u=(UsuarioSesion)session.getAttribute("usuario");response.sendRedirect(request.getContextPath()+"/"+(u.getRol().equals("ALUMNO")?"alumno":"profesor")+"/bienvenido.jsp"); %>
